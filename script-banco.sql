@@ -439,13 +439,6 @@ tb_cliente_dt_cad as 'Data de cadastro' from tb_cliente
 end $$
 DELIMITER ;
 
-DELIMITER $$
-create procedure sp_deleta_cliente(in id integer)
-BEGIN
-delete from tb_cliente where tb_cliente_id = id;
-END $$
-DELIMITER ;
-
 
 
 DELIMITER $$
